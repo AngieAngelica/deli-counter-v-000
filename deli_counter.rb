@@ -4,11 +4,11 @@ def line(katz_deli)
   if katz_deli.empty? == true
      puts "The line is currently empty."
   else
-    line_number = 0
-    katz_deli.map do |name|
-     puts "The line is currently: #{line_number += 1}. #{name}"
-  end
-     "The line is currently: #{line_number += 1}. #{name}"
+    line = "The line is currently:"
+    katz_deli.each.with_index(1) do |person, index|
+      line.push" #{index}. #{person}"
+    end
+    puts current_line
   end
 end
 
