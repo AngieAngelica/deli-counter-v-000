@@ -18,10 +18,6 @@ def take_a_number(katz_deli, name)
   return name, position
 end
 
-
-def take_a_number(argument, argument2)
-end
-
 def now_serving (katz_deli)
   if katz_deli.empty? == true
     puts"There is nobody waiting to be served!"
